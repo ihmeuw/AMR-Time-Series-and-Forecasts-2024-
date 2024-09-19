@@ -140,7 +140,7 @@ ir <- rbind(ir,irall)
 
 bdc <- read.csv("FILEPATH")
 bdc <- bdc %>%
-  filter(kevin_catrin_exclude == 0) %>%
+  filter(NAMES_exclude == 0) %>%
   mutate(pathogen = case_when(
     pathogen == "group_b_strep" ~ 'streptococcus_group_b',
     pathogen == "enterococcus_spp" ~ 'enterococcus_others',
